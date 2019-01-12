@@ -23,9 +23,7 @@ table = sop.tbody
 # Loop over each table row
 for row in table.find_all("tr"):
     # Extract row data
-    time = row.find(headers="time")
-    time = time.find(class_="dsx-date").text
-    
+    time = row.find(headers="time").find(class_="dsx-date").text    
     description = row.find(headers="description").find("span").text
     temp = row.find(headers="temp").find("span").text
     feels = row.find(headers="feels").find("span").text
