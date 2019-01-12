@@ -1,6 +1,7 @@
 # using requests to get the html page.
 import requests
 # using BeautifulSoup to parse html pages.
+# install using: pip install beautifulsoup4
 from bs4 import BeautifulSoup
 # using json to dump the data into a json file
 import json
